@@ -1,12 +1,15 @@
 // Ginny Ritchie
-// Java Final Project
+// Java Final Project- Child Page
 // 10-15-2025
 
 // CH 14 SWING
+import java.awt.Color;
+import java.awt.Font;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 // CH4 DECLARING AND USING CLASSES/OBJECTS
 public class DailyProfit extends GinnyRoseStudio
@@ -14,6 +17,14 @@ public class DailyProfit extends GinnyRoseStudio
     // CH 3 MAIN METHOD
     public static void main(String[] args)
     {
+    
+    // TRYING TO MAKE A PRETTY INTERFACE
+    UIManager.put("Panel.background", new Color(157, 193, 131));
+    UIManager.put("OptionPane.background", new Color(157, 193, 131));
+    UIManager.put("OptionPane.messageForeground", new Color(255, 253, 208));
+    UIManager.put("OptionPane.messageFont", new Font("Serif", Font.BOLD, 16));
+
+
         // NEED TO DCLARE MY TOTAL PROFIT
         double totalProfit = 0.0;
 
